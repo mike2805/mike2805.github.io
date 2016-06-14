@@ -4,16 +4,43 @@
   <head>
     <meta charset="utf-8">
     <title>Fan Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
   </head>
 
   <body>
-    <h1 class="center-text" style="color: hsl(60, 100%, 40%)">
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">Me</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">WHO</a></li>
+            <li><a href="#">WHAT</a></li>
+            <li><a href="../pages/my-pet.html">WHERE</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid bg-3 text-center">
+    <h1 style="color: hsl(60, 100%, 40%)">
       Welcome to my Simpsons Fan Page!
     </h1>
-    <img class="project-image" src="../img/the-simpsons.jpg">
-    <br/>
-    <p>
+    <img src="../img/the-simpsons.jpg">
+
+
+    <p class="text-box">
       The Simpsons is an American animated sitcom created by Matt Groening for
       the Fox Broadcasting Company.The series is a satirical
       depiction of a working class lifestyle epitomized by the Simpson family,
@@ -21,17 +48,42 @@
       in the fictional town of Springfield and parodies American culture,
       society, television, and many aspects of the human condition. -Wikipedia
     </p>
-    <br/>
+    </div>
 
-    <img class="project-image" src="../img/quote-01.jpg">
+    <div class="container-fluid bg-2 text-center">
+      <h3 class="margin">Words to live by...</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <p>Work Habit</p>
+          <img src="../img/quote-01.jpg" class="img-responsive margin" style="display:inline" alt="Image">
+        </div>
+        <div class="col-sm-4">
+          <p>Being Successful</p>
+          <img src="../img/quote-02.jpg" class="img-responsive margin" style="display:inline" alt="Image">
+        </div>
+        <div class="col-sm-4">
+          <p>Beer...</p>
+          <img src="../img/quote-03.jpg" class="img-responsive margin" style="display:inline" alt="Image">
+        </div>
+      </div>
+    </div>
 
-    <br/>
+    <div class="container-fluid bg-3 text-center">
+      <h3 class="margin">Enjoy this video!</h3>
+      <iframe class="text-center" width="420" height="315" src="https://www.youtube.com/embed/g4oIk-yrR6I" frameborder="0" allowfullscreen></iframe>
 
-    <iframe class="page-video" width="420" height="315" src="https://www.youtube.com/embed/g4oIk-yrR6I" frameborder="0" allowfullscreen></iframe>
+    </div>
 
-    <br/>
+    <footer class="container-fluid bg-4 text-center">
+      <p>Michael Monterrosa 2016</p>
+    </footer>
 
-    <a href="../index.html">Return</a>
+
+
+
+
+
+
 
   </body>
 </html>
