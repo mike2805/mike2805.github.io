@@ -1,24 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>stuff</title>
+<head>
+  <meta charset="utf-8">
+  <title>JS Playground</title>
 
-  </head>
-  <body>
-    <div class="square"></div>
 
-    <style>
-      .square{
-        height:150px;
-        width:150px:
-        background-color:dodgerblue
-      }
-    </style>
 
-    <script>
-    </script>
+</head>
+<body>
+  <div class="result"></div>
 
-    
-  </body>
+
+  <script>
+  alert("This site is AMAZING!!! Enjoy with caution.");
+
+  var userName = prompt("What is your name?");
+
+  alert("Hello there " + userName + " !!!")
+//0614 assignment
+  var isZero = 0;
+  if(isZero === 0){
+  alert("Zero always equals Zero!!! Just so you know.");
+  }
+  if(isZero === 1){
+    alert("Zero can also be One.");
+  }
+
+  var isFeeling = prompt("How are you feeling today?");
+
+  if(isFeeling === "sad"){
+    alert("Sorry to here that.");
+  }else{
+    alert("OK");
+  }
+
+  var flavor = prompt("What is your favorite flavor? Chocolate or Vanilla?")
+
+  if(flavor === "vanilla"){
+    alert("You have chosen wisely.")
+  }
+  if(flavor === "chocolate"){
+    alert("Access Denied.")
+  }
+
+  var userGuess = prompt("What number am I thinking of?");
+  var myNumber = 23;
+  var userGuessEl = document.querySelector(".result");
+
+  //variables inside objects are called properties
+  userGuessEl.innerHTML = "Your number is " + userGuess + " and mine is " + myNumber;
+
+
+  var sitePass = "cheese"
+  var userPassInput = prompt("What is the password?");
+
+  if(userPassInput === sitePass){
+    alert("Come on in!");
+  }else{
+    window.location = "http://www.someotherpage.com";
+  }
+
+
+
+
+  </script>
+</body>
 </html>

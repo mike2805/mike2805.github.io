@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RPS</title>
+  </head>
+  <body>
+    <div class="game-display"></div>
+
+    <div class="win-lose"></div>
+
+    <script>
+     var userChoice =  prompt("Do you choose rock, paper or scissors?")
+     var computerChoice =Math.floor(Math.random()*3)
+     console.log(computerChoice)
+     if (computerChoice === 0) {
+      computerChoice = "rock";
+     }
+     else if (computerChoice === 1) {
+      computerChoice = "paper";
+     }
+     else {
+      computerChoice = "scissors";
+     }
+     var resultEl = document.querySelector(".game-display");
+
+     resultEl.innerHTML = "You are " + userChoice + " and I am " + computerChoice;
+
+     var victoryDis = document.querySelector(".win-lose");
+
+     if(userChoice === "rock" && computerChoice === "rock"){
+       victoryDis.innerHTML = "It's a tie";
+     }else if (userChoice === "rock" && computerChoice === "paper") {
+       victoryDis.innerHTML = "You Lose!!!";
+     }else if (userChoice === "rock" && computerChoice === "scissors") {
+       victoryDis.innerHTML = "You Win!!!";
+     }else {
+       //invalid game
+     }
+
+     if(userChoice === "paper" && computerChoice === "rock"){
+       victoryDis.innerHTML = "You Win!!!";
+     }else if (userChoice === "paper" && computerChoice === "paper") {
+       victoryDis.innerHTML = "It's a tie";
+     }else if (userChoice === "paper" && computerChoice === "scissors") {
+       victoryDis.innerHTML = "You Lose!!!";
+     }else {
+       //invalid game
+     }
+
+     if(userChoice === "scissors" && computerChoice === "rock"){
+       victoryDis.innerHTML = "You Lose!!!";
+     }else if (userChoice === "scissors" && computerChoice === "paper") {
+       victoryDis.innerHTML = "You Win!!!";
+     }else if (userChoice === "scissors" && computerChoice === "scissors") {
+       victoryDis.innerHTML = "It's a tie";
+     }else {
+       //invalid game
+     }
+    </script>
+
+  </body>
+</html>
