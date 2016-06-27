@@ -1,82 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to M^2!</title>
+    <link rel="icon" href="img/m_square.png" type="image/png" sizes="18x18">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-<head>
-  <title>Being Myself</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
 
-<body>
+    <!--This is the NavBar of the index page-->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+          </button>
+           <!--<a class="navbar-brand" href="#">M^2</a>-->
+           <a href="#" class="navbar-left"><img src="img/m_square.png" style="width:40px;height:40px"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"> My Art Gallery </a></li>
+            <li><a href="#"> Video Game Thoughts </a></li>
+            <li><a href="#"> Random Info </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <nav class="navbar navbar-inverse">
+    <!--Image Carousel Container -->
     <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Me</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">WHO</a></li>
-          <li><a href="pages/fan-page.html">WHAT</a></li>
-          <li><a href="pages/my-pet.html">WHERE</a></li>
-        </ul>
+      <h1 align="center">Welcome to M^2 CyberSpace</h1>
+      <h2 align="center">A website dedicated to ...</h2>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+          <div class="item active">
+            <img src="img/dim.jpg" alt="Chania" width="460" height="345">
+            <div class="carousel-caption">
+              <h3>The Abstract</h3>
+              <!--<p>The atmosphere in Chania has a touch of Florence and Venice.</p>-->
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="img/code.jpg" alt="Chania" width="460" height="345">
+            <div class="carousel-caption">
+              <h3>The Digital World</h3>
+              <!--<p>The atmosphere in Chania has a touch of Florence and Venice.</p>-->
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="img/art.jpg" alt="Flower" width="460" height="345">
+            <div class="carousel-caption">
+              <h3>The Art World</h3>
+              <!--<p>The atmosphere in Chania has a touch of Florence and Venice.</p>-->
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="img/cntrl.jpg" alt="Flower" width="460" height="345">
+            <div class="carousel-caption">
+              <h3>My Personal Interest</h3>
+              <!--<p>The atmosphere in Chania has a touch of Florence and Venice.</p>-->
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
-  </nav>
+    <br>
 
-  <div class="container-fluid bg-1 text-center">
-    <h3 class="margin">Who Am I?</h3>
-    <div class="row">
-      <div class="col-sm-4">
-        <img src="img/MyAvatar5.png" class="img-responsive img-circle margin" style="display:inline" alt="Image">
-      </div>
-      <div class="col-sm-4">
-        <img src="img/MyAvatar18.png" class="img-responsive img-circle margin" style="display:inline" alt="Image">
-      </div>
-      <div class="col-sm-4">
-        <img src="img/MyAvatar9.png" class="img-responsive img-circle margin" style="display:inline" alt="Image">
+    <div class="container">
+      <img src="img/me.png" class="img-responsive img-circle margin" style="float: left" alt="Image" width="300" height="300">
+      <h3>Hello Everyone!!</h3>
+      <p>
+       My name is Michael Monterrosa and this website is something that I have
+       personally created from scratch. I have decided to name it M^2 (M squared)
+       due the initials in my name. M^2 is going to be the house of my thoughts and
+       ideas. Also, it will be a portfolio for all my work. I hope for all those
+       who vist to enjoy my work.
+      </p>
+    </div>
+
+    <!--List-->
+    <div class="container">
+      <br>
+      <div class="panel panel-default">
+      <!-- Default panel contents -->
+        <div class="panel-heading">Now Playing</div>
+        <div class="panel-body">
+          <p>
+            Here is a list of video games that I am currently playing. Starting
+            with my favorite and ending with my least. Each game is scored by my
+            own standards.
+          </p>
+        </div>
+        <!-- Video Game Table -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Console</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Overwatch</td>
+              <td>PS4</td>
+              <td>B+</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Pokken Tournament</td>
+              <td>Wii U</td>
+              <td>B</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>StarFox Zero</td>
+              <td>Wii U</td>
+              <td>B</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Disgaea 5</td>
+              <td>PS4</td>
+              <td>B-</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-    <h3>I am many people.</h3>
-  </div>
 
-  <div class="container-fluid bg-2 text-center">
-    <h3 class="margin">What Am I?</h3>
-    <div class="row">
-      <div class="col-sm-4">
-        <p>I am a Gamer</p>
-        <img src="img/pic4.jpg" class="img-responsive margin" style="display:inline" alt="Image">
-      </div>
-      <div class="col-sm-4">
-        <p>I am an Explorer</p>
-        <img src="img/pic5.jpg" class="img-responsive margin" style="display:inline" alt="Image">
-      </div>
-      <div class="col-sm-4">
-        <p>I am an Artist</p>
-        <img src="img/pic6.png" class="img-responsive margin" style="display:inline" alt="Image">
+    <!--Personal Art Gallery -->
+    <div class="container-fluid text-center">
+      <h3 class="margin">Art Gallery Sample</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <p>VG Promo Poster</p>
+          <img src="img/p1.png" class="img-responsive  margin" style="display:inline" alt="Image" width="330" height="450">
+        </div>
+        <div class="col-sm-4">
+          <p>Rough Sketch</p>
+          <img src="img/p2.png" class="img-responsive margin" style="display:inline" alt="Image"  width="450" height="330">
+        </div>
+        <div class="col-sm-4">
+          <p>VG Concept Art</p>
+          <img src="img/p3.png" class="img-responsive margin" style="display:inline" alt="Image" width="330" height="450">
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="container-fluid bg-3 text-center">
-    <h3 class="margin">Where To Find Me?</h3>
-    <img src="img/pic3.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Image">
-    <h3>???</h3>
-  </div>
-
-  <footer class="container-fluid bg-4 text-center">
-    <p>Michael Monterrosa 2016</p>
-  </footer>
-
-
-</body>
+    <!--Footer -->
+    <footer class="container-fluid footerbg text-center">
+      <p>2016 M^2 CyberSpace</p>
+      <div id="social-bar">
+        <a href="http://twitter.com" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+        <a href="http://facebook.com" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+        <a href="http://plus.google.com" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+      </div>
+    </footer>
+  </body>
 </html>
