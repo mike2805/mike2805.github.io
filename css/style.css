@@ -27,6 +27,10 @@ body{
   margin: auto;
 }
 
+.simpbg{
+  background-color: #99ebff;
+  color: hsl(60, 100%, 40%);
+}
 .footerbg{
   background-color: #000000;
   color: #ffffff;
