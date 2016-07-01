@@ -2,6 +2,60 @@ body{
   font-family: 'BioRhyme', serif;
 }
 
+.titleGroup {
+    width: 100%;
+    font-weight: 400;
+    font-family: Panton,sans-serif;
+    position: relative;
+    pointer-events: none;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.titleGroup .firstWord {
+    font-weight: 200;
+}
+
+.titleGroup h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.titleGroup.desktop .line {
+    position: relative;
+    height: 5px;
+    background-color: #E4E7EA;
+    flex: 2;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizelegibility;
+    margin: 0;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+.titleGroup.desktop h2 {
+    padding-right: 20px;
+}
+
 .container-fluid{
   padding-top: 70px;
   padding-bottom: 70px;

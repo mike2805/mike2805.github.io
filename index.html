@@ -17,7 +17,7 @@
   <body>
 
     <!--This is the NavBar of the index page-->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-inverse">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -26,20 +26,21 @@
              <span class="icon-bar"></span>
           </button>
            <!--<a class="navbar-brand" href="#">M^2</a>-->
-           <a href="#" class="navbar-left">
+           <a href="#" class="navbar-left" style="text-decoration:none; color:white;">
              <img src="img/m_square.png" style="width:40px;height:40px">
              CyberSpace
            </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"> My Art Gallery </a></li>
-            <li><a href="#"> Video Game Thoughts </a></li>
-            <li><a href="pages/fan-page.html"> Random Info </a></li>
+            <li><a href="#aboutMe" style="color:white"> About Me</a></li>
+            <li><a href="#videoGame" style="color:white"> Video Game </a></li>
+            <li><a href="#artGallery" style="color:white"> Art Gallery </a></li>
           </ul>
         </div>
       </div>
     </nav>
+    <br>
 
     <!--Image Carousel Container -->
     <div class="container">
@@ -104,6 +105,15 @@
     <br>
 
     <div class="container">
+
+      <div class= "titleGroup desktop " id="aboutMe">
+        <h2>
+          <span class="firstWord">About</span>
+          Me
+        </h2>
+        <div class="line"></div>
+      </div>
+
       <img src="img/me.png" class="img-responsive img-circle margin" style="float: left" alt="Image" width="300" height="300">
       <h3>Hello Everyone!!</h3>
       <p>
@@ -118,6 +128,13 @@
     <!--List-->
     <div class="container">
       <br>
+      <div class= "titleGroup desktop " id="videoGame">
+        <h2>
+          <span class="firstWord">Video</span>
+          Games
+        </h2>
+        <div class="line"></div>
+      </div>
       <div class="panel panel-default">
       <!-- Default panel contents -->
         <div class="panel-heading">Now Playing</div>
@@ -141,7 +158,7 @@
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td>Overwatch</td>
+              <td><img src="img/ovrdrv.jpg" class="img-responsive  margin" style="display:inline" alt="Image" width="63" height="50">Overwatch</td>
               <td>PS4</td>
               <td>B+</td>
             </tr>
@@ -169,8 +186,15 @@
     </div>
 
     <!--Personal Art Gallery -->
-    <div class="container-fluid text-center">
-      <h3 class="margin">Art Gallery Sample</h3>
+    <div class="container container-fluid text-center">
+      <!--<h3 class="margin">Art Gallery Sample</h3>-->
+      <div class= "titleGroup desktop " id="artGallery">
+        <h2>
+          <span class="firstWord">Sample</span>
+          Gallery
+        </h2>
+        <div class="line"></div>
+      </div>
       <div class="row">
         <div class="col-sm-4">
           <p>VG Promo Poster</p>
@@ -187,6 +211,45 @@
       </div>
     </div>
 
+    <!--<div class="container container-fluid text-center">
+
+    <div class= "titleGroup desktop " >
+      <h2>
+        <span class="firstWord">Profile</span>
+        Stuff
+      </h2>
+      <div class="line"></div>
+    </div>
+  </div>-->
+
+    <div class="container container-fluid text-center">
+      <div class= "titleGroup desktop " >
+        <h2>
+          <span class="firstWord">Game</span>
+          Time
+        </h2>
+        <div class="line"></div>
+      </div>
+      <h3>
+        Video Game Trivia</h3>
+        <br />
+      <h4>  Asking question <span id="NumberAsked">1</span> of 10 with <span id="NumberCorrect">0</span> answers correct</h4>
+      <p>
+       <span id="TriviaQuestion">???</span>
+   </p>
+   <p>
+       &nbsp;
+       <input id="RadioTrue" type="radio" value="true" name="answer" checked="checked" /> True
+       &nbsp;&nbsp;&nbsp;
+       <input id="RadioFalse" type="radio" value="false" name="answer" /> False
+   </p>
+   <p>
+       <input id="ButtonContinue" onclick="checkAnswer();" type="button" value="continue" />
+   </p>
+
+    </div>
+
+
     <!--Footer -->
     <footer class="container-fluid footerbg text-center">
       <p>2016 M^2 CyberSpace</p>
@@ -196,5 +259,7 @@
         <a href="http://plus.google.com" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
       </div>
     </footer>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>
